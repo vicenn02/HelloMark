@@ -60,3 +60,43 @@ Después pondríamos lo siguiente en el fichero /etc/icinga2/conf.d/services.con
 Captura de la monitorización:
 
 ![Captura3](capturas/11.jpeg)
+
+
+## Configuración de notificaciones
+
+Lo primero que debemos hacer es instalar postfix:
+
+![Captura3](capturas/12.jpeg)
+
+Cuando salga el asistente haremos lo siguiente:
+
+![Captura3](capturas/13.jpeg)
+
+Ponemos el correo para el servidor:
+
+![Captura3](capturas/14.jpeg)
+
+Después iríamos al fichero /etc/icinga2/conf.d/users.conf y pondríamos el mismo correo, el fichero quedaría así:
+
+![Captura3](capturas/15.jpeg)
+
+Para recibir notificaciones de un servicio determinado cambiariamos lo siguiente en los ficheros hosts.conf y services.conf:
+
+el fichero host.conf quedaría así:
+
+![Captura3](capturas/16.jpeg)
+
+yel fichero services.conf quedariía así:
+
+![Captura3](capturas/17.jpeg)
+
+**Prueba del correo**
+
+Para comprobar el funcionamiento apagaré el otro equipo para que me mande un correo:
+
+![Captura3](capturas/18.jpeg)
+
+Captura del email recibido
+
+![Captura3](capturas/19.jpeg)
+
