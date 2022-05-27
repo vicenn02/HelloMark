@@ -1,14 +1,4 @@
-# Práctica: Despliegue de un servicio de monitorización
-
-**Instalación de Icinga con Ansible**
-
-Para simplificar la instalación hemos utilizado Ansible, que es un framework de automatización de tareas. En el directorio icinga/ansible se encuentra un script bash que realiza la instalación de Ansible y a continuación instala Icinga.
-
-Para utilizar este método, clonaremos el repositorio de instalación en el servidor:
-
- ![Captura1](capturas/1.jpeg)
-
-**Configuración Icinga**
+# Configuración Icinga
 Una vez hemos instalado Icinga2 y el interfaz Icingaweb2, procedemos a configurar el servicio web.
 
 Si se instala mediante los scripts de Ansible, se habrán generado una serie de ficheros de configuración con los siguientes nombres: HOSTNAME.icingaweb2, HOSTNAME.icinga2 y HOSTNAME.icinga2_mysql.
@@ -42,3 +32,5 @@ Accedemos a Icingaweb2 desde el navegador usando la url “localhost/icingaweb2�
 Accedemos con el usuario administrativo creado y comprobamos que funciona correctamente:
 
 ![Captura3](capturas/8.jpeg)
+
+[Volver al inicio](Icinga.md)
