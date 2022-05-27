@@ -1,1 +1,0 @@
-[Volver al inicio](Icinga.md)
